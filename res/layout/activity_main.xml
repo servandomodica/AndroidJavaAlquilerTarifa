@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="320dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/auto1"
+                    android:checked="true"
+                    android:gravity="top|left|start"
+                    android:onClick="alquiler" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="320dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/auto2"
+                    android:gravity="top|left|start"
+                    android:onClick="alquiler" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="320dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/auto3"
+                    android:gravity="top|left|start"
+                    android:onClick="alquiler" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="320dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/auto4"
+                    android:gravity="top|left|start"
+                    android:onClick="alquiler" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cantidad de Días:"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(precio)"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="confirmar"
+                    android:text="Confirmar alquiler" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
